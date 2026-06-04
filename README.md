@@ -1,92 +1,162 @@
-COVID-19 Data Analysis & Dashboard System
-Project Overview
+# COVID-19 Data Analysis and Interactive Dashboard
 
-The global spread of COVID-19 created a massive amount of real-time data across countries. This project focuses on analyzing COVID-19 data and building an interactive dashboard to visualize trends, patterns, and insights.
-The system uses Python, Pandas, Plotly, and Dash to perform Exploratory Data Analysis (EDA) and generate visual insights.
+## Project Overview
 
-Objectives
-Analyze real-world COVID-19 data
-Identify trends and patterns
-Compare countries based on cases
-Build an interactive dashboard
-Provide meaningful insights
-Dataset Information
+The manual analysis of large-scale COVID-19 data is challenging and time-consuming. This project automates data cleaning, processing, and Exploratory Data Analysis (EDA) to understand global pandemic trends. An interactive dashboard is developed to visualize confirmed cases, deaths, recoveries, and active cases across different countries and time periods.
 
-Dataset Name: Corona Virus Report
-Source: Kaggle
+---
 
-Selected Columns
-Date – Observation date
-Country/Region – Country name
-Confirmed – Total confirmed cases
-Deaths – Total deaths
-Recovered – Total recovered cases
-Active – Active cases
-Removed Columns
-Province/State
-Latitude
-Longitude
-Last Update
-Incident Rate
-Case Fatality Ratio
-Technologies Used
-Python
-Pandas
-Plotly
-Dash
-Project Workflow
-1. Data Collection
-Load dataset from Kaggle
-Select required columns
-2. Data Cleaning
-Handle missing values
-Convert date format
-Remove duplicates
-3. Data Analysis
-Calculate total confirmed cases
-Calculate total deaths
-Calculate total recoveries
-4. Visualization
-Line chart – Cases over time
-Bar chart – Top countries
-Pie chart – Case distribution
-Scatter plot – Relationship analysis
-Heatmap – Correlation
-5. Dashboard
-Interactive dashboard using Dash
-Country dropdown selection
-Dynamic charts
-Key Features
-Real-time trend visualization
-Country-wise comparison
-Interactive dashboard controls
-Easy-to-understand graphs
-How to Run
-In Google Colab
-Upload dataset file
-Run Python code
-View graphs
-In Local System
-Install required libraries
-Run the Python file
-Open dashboard in browser
-Project Structure
+## Dataset Information
 
-project/
-│── app.py
-│── covid_sample_dataset.csv
-│── requirements.txt
-│── README
+**Source:** Kaggle
 
-Insights
-COVID-19 cases increased rapidly over time
-Some countries were highly affected
-Recovery rates improved gradually
-Strong relationship between confirmed and deaths
-Conclusion
+**Dataset Name:** Corona Virus Report (COVID-19 Dataset)
 
-This project helps understand COVID-19 trends using data visualization. The dashboard provides a simple and interactive way to analyze pandemic data and supports better decision-making.
+**Dataset Link:** Kaggle COVID-19 Dataset
 
-Acknowledgement
-Kaggle for dataset
-Python open-source libraries
+### Features Used for Analysis
+
+To improve performance and simplify analysis, only the following essential features were selected:
+
+* **Date** – Observation date
+* **Country/Region** – Country name
+* **Confirmed** – Total confirmed cases
+* **Deaths** – Total deaths
+* **Recovered** – Total recovered cases
+* **Active** – Active cases
+
+**Note:** Columns such as Province/State, Latitude, Longitude, and other unnecessary attributes were removed to optimize dashboard performance.
+
+---
+
+## Objectives
+
+### 1. Data Collection and Cleaning
+
+* Load the dataset
+* Handle missing values
+* Format date fields
+* Remove duplicate records
+
+### 2. Descriptive Statistics
+
+* Calculate total confirmed cases
+* Calculate total deaths
+* Calculate total recoveries
+* Compute mortality and recovery rates
+
+### 3. Trend Analysis
+
+* Analyze case growth over time
+* Identify pandemic peaks and waves
+* Track recovery and death trends
+
+### 4. Country-Wise Analysis
+
+* Compare affected countries
+* Identify top countries based on confirmed cases
+* Analyze country-level recovery and death statistics
+
+### 5. Relationship Analysis
+
+* Study relationships between variables
+* Analyze Confirmed vs Deaths
+* Analyze Confirmed vs Recovered cases
+
+### 6. Interactive Dashboard Development
+
+* Create a dashboard using Plotly Dash
+* Add country filters
+* Add date range selection
+* Enable interactive visual exploration
+
+---
+
+## Visualizations Used
+
+### Line Chart
+
+* Displays COVID-19 trends over time
+* Shows pandemic waves and growth patterns
+
+### Bar Chart
+
+* Compares top affected countries
+* Highlights countries with the highest confirmed cases
+
+### Pie Chart
+
+* Shows distribution of:
+
+  * Active Cases
+  * Recovered Cases
+  * Death Cases
+
+### Scatter Plot
+
+* Analyzes relationships between variables
+* Example: Confirmed Cases vs Deaths
+
+### Correlation Heatmap
+
+* Displays correlation among numerical features
+* Identifies strong and weak relationships
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Plotly
+* Dash
+* Google Colab
+
+---
+
+## How to Run the Project in Google Colab
+
+### Step 1: Clone the Repository
+
+```bash
+!git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+%cd YOUR_REPOSITORY_NAME
+```
+
+### Step 2: Install Required Libraries
+
+```bash
+!pip install dash plotly pandas numpy
+```
+
+### Step 3: Run the Dashboard
+
+Use JupyterDash or expose the local server port within Google Colab to view the interactive dashboard.
+
+---
+
+## Output
+
+* Cleaned COVID-19 dataset
+* Statistical analysis results
+* Interactive dashboard
+* Trend and comparison visualizations
+
+---
+
+## Key Insights
+
+* Identifies global COVID-19 trends
+* Highlights the most affected countries
+* Tracks recovery and mortality patterns
+* Supports data-driven pandemic analysis
+
+---
+
+## Future Enhancements
+
+* Real-time COVID-19 data integration
+* Advanced forecasting using Machine Learning
+* Deployment on cloud platforms
+* Enhanced dashboard with additional filters and analytics
