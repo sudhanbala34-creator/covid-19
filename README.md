@@ -160,3 +160,11 @@ Use JupyterDash or expose the local server port within Google Colab to view the 
 * Advanced forecasting using Machine Learning
 * Deployment on cloud platforms
 * Enhanced dashboard with additional filters and analytics
+* 
+Visualization
+<img width="1682" height="655" alt="image" src="https://github.com/user-attachments/assets/4b6df3f7-3bbd-413e-a6b3-367324a0747f" />
+<img width="1681" height="657" alt="image" src="https://github.com/user-attachments/assets/e7d61d7b-d00b-4448-bf84-be9a210be952" />
+<img width="1686" height="665" alt="image" src="https://github.com/user-attachments/assets/c4b9df1b-e98f-43fd-ab54-db6cbc1b3f2b" />
+<img width="1672" height="653" alt="image" src="https://github.com/user-attachments/assets/0c122c7f-1d07-4c01-ac2f-e9f78134ed85" />
+
+
